@@ -273,6 +273,7 @@
 .about {
   display: grid;
   grid-template-columns: 334px 693px;
+  align-items: start;
   gap: 25px;
   width: 1052px;
   height: 595px;
@@ -307,19 +308,39 @@
 
 .about__title {
   width: 291px;
-  margin: 0 0 90px;
+  height: 47px;
+  margin: 3px 0 100px;
   font-size: 40px;
-  line-height: 47px;
+  font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
+  color: #000;
 }
 
 .about__text {
-  display: flex;
-  flex-direction: column;
   width: 693px;
-  gap: 24px;
+  height: 312px;
   font-size: 20px;
+  font-weight: 400;
   line-height: 24px;
+  color: #000;
+}
+
+.about__text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__text p:first-child {
+  width: 688px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.about__text p:nth-child(2) {
+  width: 693px;
+  height: 168px;
 }
 
 .footer {
